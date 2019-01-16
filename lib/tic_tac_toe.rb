@@ -135,12 +135,14 @@ end
 # The main method which simulates the complete game
 def play(board)
   until over?(board)
-    turn(board)
-    if won?(board)
-      puts "Congratulations #{winner(board)}!"
-      # break
-    elsif draw?(board)
-      puts "Cat's Game!"
+    if turn_count(board) < 10
+      turn(board)
+      if won?(board)
+        puts "Congratulations #{winner(board)}!"
+        # break
+      elsif draw?(board)
+        puts "Cat's Game!"
+      end
     end
   end
 end
