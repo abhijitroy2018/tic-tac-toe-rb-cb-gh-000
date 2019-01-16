@@ -70,3 +70,11 @@ def current_player(board)
   turn_count(board).even?? "X" : "O"
 end
 
+# Processes a win combination
+def won?(board)
+
+
+
+
+
+end
