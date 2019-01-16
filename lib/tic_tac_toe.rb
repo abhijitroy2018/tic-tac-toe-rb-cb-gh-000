@@ -98,4 +98,25 @@ def won?(board)
   return result_array
 end
 
+# Checks if board is full
+def full?(board)
+  return !board.include?(" ")
+end
 
+# Checks if game is a tie 
+def draw?(board)
+  if full?(board) && !won?(board)
+    return true
+  elsif !full?(board) && !won?(board)
+    return false # for in-progress game
+  elsif won?(board)
+    return false
+  # else
+  #   return true
+   end
+end
+
+
+
+
+  
