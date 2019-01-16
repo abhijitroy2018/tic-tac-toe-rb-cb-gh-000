@@ -25,3 +25,10 @@ end
 def input_to_index(user_input)
   user_input.to_i - 1
 end
+
+# Move the token 'X' or 'O' to user-specified board position
+def move(board, index, current_player)
+  board[index] = current_player
+end
+
+
