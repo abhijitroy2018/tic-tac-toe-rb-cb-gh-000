@@ -136,13 +136,13 @@ end
 def play(board)
   until over?(board)
     if turn_count(board) < 10
-      turn(board)
-      if won?(board)
-        puts "Congratulations #{winner(board)}!"
-        # break
-      elsif draw?(board)
-        puts "Cat's Game!"
-      end
+      turn(board)      
     end
+  end
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+    # break
+  elsif draw?(board)
+    puts "Cat's Game!"
   end
 end
