@@ -66,7 +66,7 @@ def turn_count(board)
 end
 
 # Determines the eligible player at the beginning of each turn
+def current_player(board)
+  turn_count(board).even?? "X" : "O"
+end
 
-
-
-  
