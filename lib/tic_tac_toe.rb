@@ -130,3 +130,10 @@ def winner(board)
   end
 end
 
+# The main method which simulates the complete game
+
+
+
+
+
+
