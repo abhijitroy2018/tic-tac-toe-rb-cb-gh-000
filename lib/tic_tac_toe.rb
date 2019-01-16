@@ -1,4 +1,4 @@
-# All methods go here.
+# All methods & constants go here.
 
 # Defining constant
 WIN_COMBINATIONS = [
