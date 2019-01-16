@@ -103,7 +103,7 @@ def full?(board)
   return !board.include?(" ")
 end
 
-# Checks if game is a tie 
+# Checks if game is a tie
 def draw?(board)
   if full?(board) && !won?(board)
     return true
@@ -114,6 +114,13 @@ def draw?(board)
   # else
   #   return true
    end
+end
+
+# Checks if game is complete
+def over?(board)
+  if won?(board) || full?(board) || draw?(board)
+    return true
+  end
 end
 
 
