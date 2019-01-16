@@ -84,7 +84,7 @@ def won?(board)
 
       if winning_positions_taken
         # All Xs
-        all_Xs = (board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X") 
+        all_Xs = (board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X")
 
         # All Os
         all_Os = (board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O")
@@ -99,8 +99,3 @@ def won?(board)
 end
 
 
-
-
-
-
-end
