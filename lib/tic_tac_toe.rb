@@ -136,7 +136,7 @@ end
 def play(board)
   until over?(board)
     if turn_count(board) < 10
-      turn(board)      
+      turn(board)
     end
   end
   if won?(board)
