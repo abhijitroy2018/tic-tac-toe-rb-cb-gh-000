@@ -91,6 +91,7 @@ def won?(board)
 
         if all_Xs || all_Os
           result_array = win_combination
+          break
         end
       end
     end
