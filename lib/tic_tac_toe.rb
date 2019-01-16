@@ -1,6 +1,7 @@
 # All methods go here.
 
-# CONSTANT
+# Defining constant
+
 
 
 
