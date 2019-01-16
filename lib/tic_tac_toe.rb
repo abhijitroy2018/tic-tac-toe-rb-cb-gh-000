@@ -134,7 +134,7 @@ end
 
 # The main method which simulates the complete game
 def play(board)
-  until !over?(board)
+  until over?(board)
     turn(board)
     if won?(board)
       puts "Congratulations #{winner(board)}!"
