@@ -53,3 +53,18 @@ def turn(board)
     turn(board)
   end
 end
+
+# Counts the total #turns played
+def turn_count(board)
+  total_turns_played = 0
+  board.each do |turn|
+    if turn == "X" || turn == "O"
+      total_turns_played += 1
+    end
+  end
+  return total_turns_played
+end
+
+
+
+  
