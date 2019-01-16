@@ -105,15 +105,16 @@ end
 
 # Checks if game is a tie
 def draw?(board)
-  if full?(board) && !won?(board)
-    return true
-  elsif !full?(board) && !won?(board)
-    return false # for in-progress game
-  elsif won?(board)
-    return false
-  # else
+  # if full?(board) && !won?(board)
   #   return true
-   end
+  # elsif !full?(board) && !won?(board)
+  #   return false # for in-progress game
+  # elsif won?(board)
+  #   return false
+  # # else
+  # #   return true
+  #  end
+  !won?(board) && full?(board)
 end
 
 # Checks if game is complete
