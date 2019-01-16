@@ -72,6 +72,16 @@ end
 
 # Processes a win combination
 def won?(board)
+  board_empty = board.all? {|element| element == " "}
+  result_array = false
+  if board_empty
+    return false
+  else
+    WIN_COMBINATIONS.each do |win_combination|
+      winning_positions_taken = position_taken?(board, win_combination[0]) && 
+                                position_taken?(board, win_combination[1]) &&
+                                position_taken?(board, win_combination[2])
+
 
 
 
