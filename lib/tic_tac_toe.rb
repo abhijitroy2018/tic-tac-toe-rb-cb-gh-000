@@ -65,6 +65,8 @@ def turn_count(board)
   return total_turns_played
 end
 
+# Determines the eligible player at the beginning of each turn
+
 
 
   
