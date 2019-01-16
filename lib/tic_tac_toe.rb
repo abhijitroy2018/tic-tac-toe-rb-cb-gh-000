@@ -78,10 +78,10 @@ def won?(board)
     return false
   else
     WIN_COMBINATIONS.each do |win_combination|
-      winning_positions_taken = position_taken?(board, win_combination[0]) && 
+      winning_positions_taken = position_taken?(board, win_combination[0]) &&
                                 position_taken?(board, win_combination[1]) &&
                                 position_taken?(board, win_combination[2])
-
+      
 
 
 
